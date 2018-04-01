@@ -1,0 +1,40 @@
+* {
+    font-family: monospace;
+    animation-iteration-count: infinite;
+}
+@keyframes change-img {
+    from {}
+    to {transform: scale(0.75, 0.75); rotate(360deg);}
+}
+@keyframes change-description {
+    from {font-size: 0em; margin-left: 66vw;}
+    to {font-size: 0.75em; margin-left: 0vw;}
+}
+@keyframes change-article-title {
+    from {font-size: 0em; margin-left: 66vw;}
+    to {font-size: 0.75em; margin-left: 0vw;}
+}
+@keyframes change-title {
+    from {margin-left: 75vw;}
+    to {margin-left: 0vw;}
+}
+.main-title {
+    font-size: 0.75em;
+    animation-name: change-title;
+    animation-duration: 2s;
+}
+.article-title {
+    animation-name: change-article-title;
+    animation-duration: 4s;
+}
+.description {
+    font-size: 0.75em;
+    animation-name: change-description;
+    animation-duration: 4.25s;
+}
+.news-image {
+	max-height: 10em;
+    max-width: 10em;
+    animation-name: change-img;
+    animation-duration: 5s;
+}
